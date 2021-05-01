@@ -1,0 +1,14 @@
+duration = 10000000
+
+day = int (duration / 86400)
+hour = int ((duration%86400) / 3600)
+minutes = int ((duration%3600) / 60)
+seconds = int (duration%60)
+if day >= 1:
+    print(day,"day", hour, "hour", minutes, "minutes", seconds, "seconds")
+if hour >=1 and day < 1:
+    print(hour,"hour", minutes, "minutes", seconds, "seconds")
+if minutes >=1 and hour < 1 and day < 1:
+    print (minutes,"minutes", seconds, "seconds")
+if minutes < 1 and hour < 1 and day < 1:
+    print (seconds, "seconds")
