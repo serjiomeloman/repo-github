@@ -1,0 +1,7 @@
+num = 20
+if num < 2:
+    print (num, "процент")
+if num > 1 and num < 5:
+    print (num, процента)
+if num > 4:
+    print (num, "процентов")
